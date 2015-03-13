@@ -145,6 +145,20 @@
 			$this->assertEquals(2, $result);
 		}
 
+		function test_ExactMatchNoPunctuation()
+		{
+			//Arrange
+			$exact_match_no_punctuation = new CountRepeats;
+			$string_to_check = "Verily!";
+			$word_to_count = "verily";
+
+			//Act
+			$result = $exact_match_no_punctuation->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(1, $result);
+		}
+
 	}
 
 ?>
