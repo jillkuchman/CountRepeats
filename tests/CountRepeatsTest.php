@@ -96,6 +96,21 @@
 
 		}
 
+		function test_MultipleInstances_CaseInsensitive()
+		{
+
+			//Arrange
+			$multiple_instances_case_insensitive = new CountRepeats;
+			$string_to_check = "hello Hello";
+			$word_to_count = "HELLO";
+
+			//Act
+			$result = $multiple_instances_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(2, $result);
+
+		}
 
 	}
 
