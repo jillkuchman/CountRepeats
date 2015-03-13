@@ -1,11 +1,11 @@
 <?php
 
-	require_once "src/CountRepeats.php";
+	require_once "./src/CountRepeats.php";
 
 	Class CountRepeatsTest extends PHPUnit_Framework_TestCase
 	{
 
-		function test_ExactMatch_OneLetter
+		function test_ExactMatch_OneLetter()
 		{
 			//Arrange
 			$exact_match_one_letter = new CountRepeats;
