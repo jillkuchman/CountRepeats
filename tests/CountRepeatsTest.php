@@ -117,6 +117,20 @@
 			$this->assertEquals(0, $result);
 		}
 
+		function test_OneInstance_MultiWordString()
+		{
+			//Arrange
+			$one_instance_multi_word = new RepeatCounter;
+			$string_to_check = "hello world";
+			$word_to_count = "hello";
+
+			//Act
+			$result = $one_instance_multi_word->countRepeats($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(1, $result);
+		}
+
 		function test_MultipleInstances_MultiDiffWordString()
 		{
 			//Arrange
