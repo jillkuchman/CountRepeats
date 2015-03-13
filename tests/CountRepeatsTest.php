@@ -20,6 +20,21 @@
 
 		}
 
+		function test_ExactMatch_OneLetter_CaseInsensitive()
+		{
+			//Arrange
+			$exact_match_one_letter_case_insensitive = new CountRepeats;
+			$string_to_check = 'A';
+			$word_to_count = 'a';
+
+			//Act
+			$result = $exact_match_one_letter_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(1, $result);
+
+		}
+
 	}
 
 ?>
