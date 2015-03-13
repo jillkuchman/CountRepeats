@@ -65,7 +65,20 @@
 
 		}
 
+		function test_ExactMatch_MultiLetter_CaseInsensitive()
+		{
+			//Arrange
+			$exact_match_multi_letter_case_insensitive = new CountRepeats;
+			$string_to_check = 'Aa';
+			$word_to_count = 'aA';
 
+			//Act
+			$result = $exact_match_multi_letter_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(1, $result);
+
+		}
 
 
 	}
