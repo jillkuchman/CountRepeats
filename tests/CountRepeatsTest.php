@@ -159,6 +159,21 @@
 			$this->assertEquals(1, $result);
 		}
 
+		function test_MultipleInstancesNoPunctuation()
+		{
+			//Arrange
+			$multiple_instances_no_punctuation = new CountRepeats;
+			$string_to_check = "Buffalo buffalo.";
+			$word_to_count = "buffalo";
+
+			//Act
+			$result = $multiple_instances_no_punctuation->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(2, $result);
+		}
+
+
 	}
 
 ?>

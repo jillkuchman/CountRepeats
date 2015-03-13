@@ -5,10 +5,10 @@
 
 		function countRepeatsCounter($input_string, $input_word)
 		{
-			//this line removes punctuation from input string
+			//this line removes punctuation from input string, stores new string in new variable
 			$input_string_no_punctuation = preg_replace("#[[:punct:]]#", "", $input_string);
 
-			//this line turns the input string into an array of words
+			//this line turns the input string without punctuation into an array of words
 			$input_array_of_words = explode(" ", $input_string_no_punctuation);
 
 			//this line initalizes the word count at 0
