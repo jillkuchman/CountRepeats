@@ -1,6 +1,6 @@
 <?php
 
-	class CountRepeats
+	class RepeatCounter
 	{
 
 		function countRepeatsCounter($input_string, $input_word)
