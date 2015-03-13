@@ -13,7 +13,7 @@
 			$word_to_count = 'a';
 
 			//Act
-			$result = $exact_match_one_letter->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $exact_match_one_letter->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(1, $result);
@@ -27,7 +27,7 @@
 			$word_to_count = 'a';
 
 			//Act
-			$result = $exact_match_one_letter_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $exact_match_one_letter_case_insensitive->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(1, $result);
@@ -41,7 +41,7 @@
 			$word_to_count = 'b';
 
 			//Act
-			$result = $word_not_found->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $word_not_found->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(0, $result);
@@ -55,7 +55,7 @@
 			$word_to_count = 'aa';
 
 			//Act
-			$result = $exact_match_multi_letter->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $exact_match_multi_letter->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(1, $result);
@@ -69,7 +69,7 @@
 			$word_to_count = 'aA';
 
 			//Act
-			$result = $exact_match_multi_letter_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $exact_match_multi_letter_case_insensitive->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(1, $result);
@@ -83,7 +83,7 @@
 			$word_to_count = "hello";
 
 			//Act
-			$result = $multiple_instances->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(2, $result);
@@ -97,7 +97,7 @@
 			$word_to_count = "HELLO";
 
 			//Act
-			$result = $multiple_instances_case_insensitive->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances_case_insensitive->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(2, $result);
@@ -111,7 +111,7 @@
 			$word_to_count = "hi";
 
 			//Act
-			$result = $word_not_found_multi_word->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $word_not_found_multi_word->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(0, $result);
@@ -125,7 +125,7 @@
 			$word_to_count = "funky";
 
 			//Act
-			$result = $multi_diff_word_string->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multi_diff_word_string->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(2, $result);
@@ -139,7 +139,7 @@
 			$word_to_count = "dog";
 
 			//Act
-			$result = $multiple_instances_random->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances_random->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(2, $result);
@@ -153,7 +153,7 @@
 			$word_to_count = "verily";
 
 			//Act
-			$result = $exact_match_no_punctuation->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $exact_match_no_punctuation->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(1, $result);
@@ -167,7 +167,7 @@
 			$word_to_count = "buffalo";
 
 			//Act
-			$result = $multiple_instances_no_punctuation->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances_no_punctuation->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(2, $result);
@@ -181,7 +181,7 @@
 			$word_to_count = "like";
 
 			//Act
-			$result = $multiple_instances_disregard_punctuation_type->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances_disregard_punctuation_type->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(3, $result);
@@ -195,7 +195,7 @@
 			$word_to_count = "fish";
 
 			//Act
-			$result = $multiple_instances_multiple_sentences->countRepeatsCounter($string_to_check, $word_to_count);
+			$result = $multiple_instances_multiple_sentences->countRepeats($string_to_check, $word_to_count);
 
 			//Assert
 			$this->assertEquals(6, $result);	
