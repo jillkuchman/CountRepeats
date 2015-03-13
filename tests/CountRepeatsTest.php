@@ -82,7 +82,6 @@
 
 		function test_MultipleInstances()
 		{
-
 			//Arrange
 			$multiple_instances = new CountRepeats;
 			$string_to_check = "hello hello";
@@ -98,7 +97,6 @@
 
 		function test_MultipleInstances_CaseInsensitive()
 		{
-
 			//Arrange
 			$multiple_instances_case_insensitive = new CountRepeats;
 			$string_to_check = "hello Hello";
@@ -110,6 +108,20 @@
 			//Assert
 			$this->assertEquals(2, $result);
 
+		}
+
+		function test_WordNotFound_MultiWordString()
+		{
+			//Arrange
+			$word_not_found_multi_word = new CountRepeats;
+			$string_to_check = "hello hello";
+			$word_to_count = "hi";
+
+			//Act
+			$result = $word_not_found_multi_word->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(0, $result);
 		}
 
 	}
