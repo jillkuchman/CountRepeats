@@ -1,0 +1,59 @@
+SPECS - COUNT REPEATS
+
+//Syntax for input: "word to count", "string to check"
+
+1	Return count for exact match of one-letter word
+	input: "a", "a"
+	output: 1
+
+2	Return count for exact match of one-letter word, case-insensitive
+	input: "A", "a"
+	output: 1
+
+3	If "word to count" is not found, do not increase count
+	input: "a", "b"
+	output: 0
+
+4	Return count for exact match of multi-letter word
+	input: "aa", "aa"
+	output: 1
+
+5	Return count for exact match of multi-letter word, case-insensitive
+	input: "Aa", "aa"
+	output: 1
+
+6	Return count for multiple instances of exact match
+	input: "hello hello", "hello"
+	output: 2
+
+7	Return count for multiple instances of exact match, case-insensitive
+	input: "hello Hello", "HELLO"
+	output: 2
+
+8	Return count for one instance in multi-word string
+	input: "Hello world", "hello"
+	output: 1
+
+9	Return count for multiple instances in multi-word string
+	input: "funky funky fresh", "funky"
+	output: 2
+
+10	Return count for multiple instances randomly throughout multi-word string
+	input: "dog eat dog world", "dog"
+	output: 2
+
+11	Return count for exact match, disregarding punctuation
+	input: "Verily!", "verily"
+	output: 1
+
+12	Return count for multiple instances in string, punctuation on some instances and not on others
+	input: "Buffalo buffalo.", "buffalo"
+	output: 2
+
+13 	Return count for multiple instances in string, disregarding type of punctuation
+	input: "I like like, like.", "like"
+	output: 3
+
+14	Return count for multiple instances randomly throughtout multi-word string, disregarding punctuation altogether
+	input: "Fish will be fish. One fish, two fish, red fish, blue fish.", "fish"
+	output: 6 
