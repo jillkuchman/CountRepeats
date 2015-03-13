@@ -6,7 +6,11 @@
 </head>
 <body>
 	<div class="container">
-		<h1>"{{ user_sentence }}" contains the word "{{ user_word }}" {{ total_word_count }} times!</h1>
+		<h2>Your sentence</h2>
+		<h1>"{{ user_sentence }}"</h1>
+		<h2>contains the word <strong>{{ user_word }}</strong> <span style="color:darkred">{{ total_word_count }}</span> times!</h2>
+		<br>
+		<h4><a href="/">Count some more words!</a></h4>
 	</div>
 </body>
 </html>
