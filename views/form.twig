@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel = "stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<title>Word Count</title>
 </head>
 <body>
-
+	<div class="container">
+		<form action="/wordcount">
+			<label for "sentence">Enter a sentence:</label>
+			<input type="text" name="sentence" id="sentence">
+			<label for "wordtocount">Which word would you like to count?</label>
+			<input type="text" name="wordtocount" id="wordtocount">
+			<button type="submit">Count!</button>
+		</form>
+	</div>
 </body>
 </html>
