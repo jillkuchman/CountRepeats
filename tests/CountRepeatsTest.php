@@ -17,7 +17,6 @@
 
 			//Assert
 			$this->assertEquals(1, $result);
-
 		}
 
 		function test_ExactMatch_OneLetter_CaseInsensitive()
@@ -32,7 +31,6 @@
 
 			//Assert
 			$this->assertEquals(1, $result);
-
 		}
 
 		function test_WordNotFound()
@@ -47,7 +45,6 @@
 
 			//Assert
 			$this->assertEquals(0, $result);
-
 		}
 
 		function test_ExactMatch_MultiLetter()
@@ -62,7 +59,6 @@
 
 			//Assert
 			$this->assertEquals(1, $result);
-
 		}
 
 		function test_ExactMatch_MultiLetter_CaseInsensitive()
@@ -77,7 +73,6 @@
 
 			//Assert
 			$this->assertEquals(1, $result);
-
 		}
 
 		function test_MultipleInstances()
@@ -92,7 +87,6 @@
 
 			//Assert
 			$this->assertEquals(2, $result);
-
 		}
 
 		function test_MultipleInstances_CaseInsensitive()
@@ -107,7 +101,6 @@
 
 			//Assert
 			$this->assertEquals(2, $result);
-
 		}
 
 		function test_WordNotFound_MultiWordString()
@@ -136,7 +129,20 @@
 
 			//Assert
 			$this->assertEquals(2, $result);
+		}
 
+		function test_MultipleInstacesRandom()
+		{
+			//Arrange
+			$multiple_instances_random = new CountRepeats;
+			$string_to_check = "It's a dog eat dog world";
+			$word_to_count = "dog";
+
+			//Act
+			$result = $multiple_instances_random->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(2, $result);
 		}
 
 	}
