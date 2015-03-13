@@ -1,6 +1,6 @@
 SPECS - COUNT REPEATS
 
-//Syntax for input: "word to count", "string to check"
+//Syntax for input: "string to check", "word to count"
 
 1	Return count for exact match of one-letter word
 	input: "a", "a"
