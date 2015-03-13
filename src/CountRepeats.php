@@ -3,7 +3,7 @@
 	class RepeatCounter
 	{
 
-		function countRepeatsCounter($input_string, $input_word)
+		function countRepeats($input_string, $input_word)
 		{
 			//this line removes punctuation from input string, stores new string in new variable
 			$input_string_no_punctuation = preg_replace("#[[:punct:]]#", "", $input_string);
