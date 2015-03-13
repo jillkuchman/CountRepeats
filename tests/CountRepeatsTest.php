@@ -35,6 +35,22 @@
 
 		}
 
+		function test_WordNotFound()
+		{
+			//Arrange
+			$word_not_found = new CountRepeats;
+			$string_to_check = 'a';
+			$word_to_count = 'b';
+
+			//Act
+			$result = $word_not_found->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(0, $result);
+
+		}
+
+
 	}
 
 ?>
