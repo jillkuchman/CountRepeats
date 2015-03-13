@@ -13,5 +13,6 @@
 		return $app['twig']->render('form.twig');
 	});
 
+	return $app;
 
 ?>
