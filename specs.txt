@@ -30,34 +30,34 @@ SPECS - COUNT REPEATS
 	input: "hello Hello", "HELLO"
 	output: 2
 
-7.5	If word is not found in multiple-word string, do not return any count
+8	If word is not found in multiple-word string, do not return any count
 	input: "hello hello", "hi"
 	output: 0
 
-8	Return count for one instance in multi-word string
+9	Return count for one instance in multi-word string
 	input: "Hello world", "hello"
 	output: 1
 
-9	Return count for multiple instances in multi-word string
+10	Return count for multiple instances in multi-word string
 	input: "funky funky fresh", "funky"
 	output: 2
 
-10	Return count for multiple instances randomly throughout multi-word string
+11	Return count for multiple instances randomly throughout multi-word string
 	input: "dog eat dog world", "dog"
 	output: 2
 
-11	Return count for exact match, disregarding punctuation
+12	Return count for exact match, disregarding punctuation
 	input: "Verily!", "verily"
 	output: 1
 
-12	Return count for multiple instances in string, punctuation on some instances and not on others
+13	Return count for multiple instances in string, punctuation on some instances and not on others
 	input: "Buffalo buffalo.", "buffalo"
 	output: 2
 
-13 	Return count for multiple instances in string, disregarding type of punctuation
+14 	Return count for multiple instances in string, disregarding type of punctuation
 	input: "I like like, like.", "like"
 	output: 3
 
-14	Return count for multiple instances randomly throughtout multi-word string, disregarding punctuation altogether
+15	Return count for multiple instances randomly throughtout multi-word string, disregarding punctuation altogether
 	input: "Fish will be fish. One fish, two fish, red fish, blue fish.", "fish"
 	output: 6 
