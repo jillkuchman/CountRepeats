@@ -20,7 +20,7 @@
 					$count ++;
 				}
 			}
-
+			//this line returns the total count of the word in the sentence
 			return $count;
 			
 		}
