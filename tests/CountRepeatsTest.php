@@ -50,6 +50,21 @@
 
 		}
 
+		function test_ExactMatch_MultiLetter()
+		{
+			//Arrange
+			$exact_match_multi_letter = new CountRepeats;
+			$string_to_check = 'aa';
+			$word_to_count = 'aa';
+
+			//Act
+			$result = $exact_match_multi_letter->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(1, $result);
+
+		}
+
 
 	}
 
