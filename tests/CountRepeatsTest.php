@@ -173,6 +173,20 @@
 			$this->assertEquals(2, $result);
 		}
 
+		function test_MultipleInstancesDisregardPunctuationType()
+		{
+			//Arrange
+			$multiple_instances_disregard_punctuation_type = new CountRepeats;
+			$string_to_check = "I like like, Like.";
+			$word_to_count = "like";
+
+			//Act
+			$result = $multiple_instances_disregard_punctuation_type->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(3, $result);
+		}
+
 
 	}
 
