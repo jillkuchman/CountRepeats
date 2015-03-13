@@ -124,6 +124,21 @@
 			$this->assertEquals(0, $result);
 		}
 
+		function test_MultipleInstances_MultiDiffWordString()
+		{
+			//Arrange
+			$multi_diff_word_string = new CountRepeats;
+			$string_to_check = "funky funky fresh";
+			$word_to_count = "funky";
+
+			//Act
+			$result = $multi_diff_word_string->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(2, $result);
+
+		}
+
 	}
 
 ?>
