@@ -22,7 +22,7 @@ SPECS - COUNT REPEATS
 	input: "Aa", "aA"
 	output: 1
 
-6	Return count for multiple instances of exact match
+6	Return count for multiple instances of word
 	input: "hello hello", "hello"
 	output: 2
 

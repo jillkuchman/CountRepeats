@@ -80,6 +80,22 @@
 
 		}
 
+		function test_MultipleInstances()
+		{
+
+			//Arrange
+			$multiple_instances = new CountRepeats;
+			$string_to_check = "hello hello";
+			$word_to_count = "hello";
+
+			//Act
+			$result = $multiple_instances->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(2, $result);
+
+		}
+
 
 	}
 
