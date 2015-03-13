@@ -187,6 +187,19 @@
 			$this->assertEquals(3, $result);
 		}
 
+		function test_MultipleInstancesInMultipleSentences()
+		{
+			//Arrange
+			$multiple_instances_multiple_sentences = new CountRepeats;
+			$string_to_check = "Fish will be fish. One fish, two fish, red fish, blue fish.";
+			$word_to_count = "fish";
+
+			//Act
+			$result = $multiple_instances_multiple_sentences->countRepeatsCounter($string_to_check, $word_to_count);
+
+			//Assert
+			$this->assertEquals(6, $result);	
+		}
 
 	}
 
